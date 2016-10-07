@@ -1,30 +1,42 @@
 # Project Title
-Version 0.0.0: September 24, 2016
+Version 0.1.0: October 7, 2016
 
 by [Karen Freeman-Smith](https://github.com/karenfreemansmith)
 
 ## Description
-Practice project for Epicodus - Java, week 4 lessons. Create a virtual pet program using Java, Spark, and PostgreSQL.
+This is a generic template for Java/Spark/Postgres projects
 
-![screenshot of project running](screenshot.jpg)
+![screenshot of project running](screenshot.png)
 
 
 ### Specifications
 #### User Stories:
-* ...
+* As a user, I can input an item and see it printed as the title of the page.
 
 #### Database Diagram:
+(create diagram at - http://ondras.zarovi.cz/sql/demo/)
+
 ![database diagram](database.png)
-(create diagram at - http://ondras.zarovi.cz/sql/demo/  )
 
 #### Technical Specifications:
-( add chart, make table at - http://www.tablesgenerator.com/markdown_tables )
+(make table at - http://www.tablesgenerator.com/markdown_tables)
+
+
+| Behavior                   	| Input        	| Output                 	|
+|----------------------------	|--------------	|------------------------	|
+| Stores description of item 	| "item one"   	| "item one"             	|
+| Updates item               	| "other item" 	| "other item"           	|
+| Finds an item by id        	| 1            	| "item one"             	|
+| List all items             	| n/a          	| returns multiple items 	|
+| Deletes item               	| n/a          	| null                   	|
 
 
 ## Setup/Installation
 * Clone directory
 * Setup database in PSQL:
-  * ...
+  * CREATE DATABASE test;
+  * \c test
+  * CREATE TABLE items (id serial PRIMARY KEY, item varchar);
 * Type 'gradle run' inside the directory
 * Navigate to 'http://localhost:4567'
 
