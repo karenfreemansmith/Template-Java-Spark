@@ -29,8 +29,9 @@ public class App {
 
     post("/", (request, response) -> {
       Map<String, Object> model = new HashMap<String, Object>();
-      model.put("result", request.queryParams("item1"));
-      model.put("template", "templates/result.vtl");
+      Item item = new Item(request.queryParams("item1"));
+      model.put("result", item);
+      model.put("template", "templates/index.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
