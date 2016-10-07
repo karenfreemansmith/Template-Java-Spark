@@ -4,7 +4,7 @@ Version 0.1.0: October 7, 2016
 by [Karen Freeman-Smith](https://github.com/karenfreemansmith)
 
 ## Description
-This is a generic template for Java/Spark/Postgres projects
+This is a generic template for Java/Spark/Postgres projects. It contains a complete project with database, an object with standard CRUD functions, sample tests for those functions, routing and lightly styled front-end designed.
 
 ![screenshot of project running](screenshot.png)
 
